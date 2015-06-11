@@ -1,0 +1,513 @@
+* {
+/*	box-sizing: border-box;*/
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: .75em/1.3 verdana,geneva,lucida,arial,sans-serif; 
+	background: #fcf4dd;
+}
+
+/* centered layout */
+#container {
+	margin: 0 auto; 
+	background: #dbe9fd url(../i/stripes2.gif); 
+	position: relative;
+	width: 90%;
+}
+
+/* google web font */
+h1 {
+	font-family: 'Orbitron', sans-serif; 
+	text-shadow: 2px 2px 2px #555; 
+	color: #14315c; 
+	padding: 50px 20px 40px 50px; 
+}
+
+/* navigation */
+nav ul {
+	list-style: none;
+}
+
+nav li, #subnav li {
+	margin-right: -2px
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	color: #fcf4dd; 
+	text-decoration: none; 
+	border: 2px solid #fcf4dd;
+}
+
+nav, nav a, #subnav a {
+	background: #14315c; 
+}
+
+#subnav a, #subnav li {
+	display: block; 
+	margin: 0;
+}
+
+#subnav li {
+	margin-top: 10px;
+}
+
+#about .actnav a, #pages .actnav a, #design .actnav a, #home .actnav a, 
+nav a:hover, nav a:focus, #subnav a:hover, #subnav a:focus {
+	background: #fcf4dd; 
+	color: #14315c; 
+	border: 2px solid #fcf4dd;
+}
+
+#sub {
+	background: #14315c; 
+	margin: 20px 20px 0 0;
+}
+
+nav a:hover, #subnav a:hover {
+	box-shadow: 1px 1px 1px inset;
+}
+
+/* content area*/
+#content {
+	min-height: 700px; 
+	background: #fff; 
+	margin: 20px;
+	padding: 20px; 
+}
+
+h2, #content li {
+	font-size: 1.2em; 
+	color: #14315c; 
+}
+
+#content li {
+	font-size: 1em;
+	margin-bottom: 2px;
+}
+
+#home .content {
+	float: left; 
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	min-height: 220px;
+	padding: 5px;
+	margin: 0 0 20px 0;
+}
+
+.space {
+	width: 4.8%;
+	float: left;
+}
+
+.nofloat {
+	clear: both;
+}
+
+#about ul {
+	margin-top: 20px;
+}
+#about #content li {
+	color: #111;
+}
+
+#about #content li li {
+	margin-left: 30px;
+}
+
+#resume {
+	padding-left: 0;
+	list-style: none;
+}
+
+#resume a {
+	border: none;
+}
+
+#content span {
+	background: url(../i/newwindowsm.png) no-repeat; 
+	display: inline-block; 
+	width: 16px; 
+	height: 16px; 
+	vertical-align: bottom; 
+	opacity: .7;
+	margin-left: 5px;
+}
+
+#pages #content ul, #portfolio #content ul {
+	margin: 0; 
+	list-style: none;
+}
+
+#pages #content li, #portfolio #content li {
+	padding-bottom: 10px;
+}
+
+#about #content a, #pages #content a, #portfolio #content a {
+	color: blue; 
+	text-decoration: underline;
+} 
+
+#pages #content p, #portfolio #content p {
+	padding: 25px 0 0 20px;
+}
+
+#pages p, #portfolio p {
+	margin: 10px 0 20px 20px; 
+	padding: 10px; 
+	color: #111;
+}
+
+#pages #content li+li, #portfolio #content li+li {
+	padding-left: 20px; 
+	display: block;
+}
+
+#ux {
+	padding-top: 30px;
+}
+
+#design img {
+	width: 100%;
+	height: auto;
+}
+
+#design p {
+	padding-bottom: 10px;
+}
+
+#next, #prev {
+	padding: 20px 30px;
+	font-size: 2em;
+	display: inline-block;
+}
+
+#next a, #prev a {
+	text-decoration: none;
+	color: #14315c; 
+}
+
+.nodisp {
+	display: none;
+}
+
+/* footer */
+#footer {
+	text-align: right; 
+	padding: 10px 15px; 
+	font-size: 90%; 
+	background: #14315c; 
+	color: #fcf4dd;
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+	h1 {
+		font-size: 4em;
+	}
+
+	nav, nav a, #subnav a {
+		padding: 10px 35px;
+	}
+
+	.menuhide {
+		display: inline-block;
+	}
+
+	#menu {
+		display: inline-block;
+	}
+
+	#portmenu, #mainmenu {
+		display: none;
+	}
+
+	#subnav li {
+		width: 220px;
+	}
+
+	#content li {
+		margin-left: 40px;
+	}
+
+	#home .content {
+		width: 20%;
+	}
+
+	#about #content li {
+		margin: 0 150px; 
+	}
+
+	#about p, #about #content div, #contact p {
+		margin: 10px 110px 0;
+	}
+
+	#about #content #resume li {
+		margin-left: 110px;
+	}
+
+	#portfolio #content {
+		margin: -318px 0 20px 291px; 
+	}
+
+	#pages #content, #design #content {
+		margin: -367px 0 20px 291px;
+	}
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 700px) {
+
+	h1 {
+		font-size: 4em;
+	}
+	
+	.menuhide {
+		display: inline-block;
+	}
+
+	nav, nav a, #subnav a {
+		padding: 10px 35px;
+	}
+
+	#menu {
+		display: inline-block;
+	}
+
+	#portmenu, #mainmenu {
+		display: none;
+	}
+
+	#subnav li {
+		width: 115px;
+	}
+
+	#content li {
+		margin-left: 40px;
+	}
+
+	#home .content {
+		min-width: 40%;
+	}
+
+	#about #content li {
+		margin: 0 100px; 
+	}
+
+	#about p, #about #content div, #contact p {
+		margin: 10px 90px 0;
+	}
+
+	#about #content #resume li {
+		margin-left: 90px;
+	}
+
+	#portfolio #content {
+		margin: -396px 0 20px 165px; 
+	}
+
+	#pages #content, #design #content {
+		margin: -461px 0 20px 165px;
+	}
+}
+
+
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+
+	h1 {
+		font-size: 4em;
+	}
+	
+	nav, nav a, #subnav a {
+		padding: 10px 20px;
+	}
+
+	#container nav {
+		padding-bottom: 26px;
+	}
+
+	.menuhide {
+		display: inline-block;
+	}
+
+	nav #menu {
+		float: left;
+	}
+
+	nav	#portmenu {
+		display: inline-block;
+		float: right;
+	}
+
+	nav .mainmenu {
+		display: none;
+	}
+
+	#subnav.menuhide {
+		display: none;
+	}
+
+	#sub {
+		postion: relative;
+		background: transparent;
+	}
+
+	#sub nav {
+		position: absolute;
+		top: 260px;
+		right: 20px;
+		width: 30%;
+	}
+
+	.backhide {
+		background: transparent;
+	}
+
+	#content li {
+		margin-left: 40px;
+	}
+
+	#home .content {
+		min-width: 100%;
+		min-height: 20px;
+	}
+
+	#home #content {
+		padding-right: 30px;
+	}
+
+	#about #content li {
+		margin: 0 20px; 
+	}
+
+	#about p, #about #content div, #contact p {
+		margin: 10px 20px 0;
+	}
+
+	#about #content #resume li {
+		margin-left: 20px;
+	}
+
+	#portfolio #content {
+		margin: -20px 0 20px 10px; 
+	}
+
+	#pages #content, #design #content {
+		margin: 0 0 20px 10px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	h1 {
+		font-size: 4em;
+	}
+	
+	nav, nav a, #subnav a {
+		padding: 10px 20px;
+	}
+
+	#container nav {
+		padding-bottom: 26px;
+		position: relative;
+	}
+
+	nav #menu {
+		position: absolute;
+		top: 50px;
+		left: 20px;
+		width: 145px;
+		background: #14315c; 
+		z-index: 10;
+	}
+
+	nav #menu a {
+		margin: 0 20px 10px;
+		width: 60px;
+		display: block;
+	}
+
+	nav #menu li:first-child {
+		margin-top: 20px;
+	}
+
+	nav #menu li:last-child {
+		margin-bottom: 15px;
+	}
+
+	nav	#portmenu {
+		display: inline-block;
+		float: left;
+	}
+
+	nav .mainmenu {
+		display: inline-block;
+		float: left;
+	}
+
+	nav .menuhide {
+		display: none;
+	}
+
+	#sub {
+		background: transparent;
+		position: relative;
+	}
+
+	#sub nav {
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		width: 30%;
+	}
+
+	.backhide {
+		background: transparent;
+	}
+
+	#content li {
+		margin-left: 40px;
+	}
+
+	#home .content {
+		min-width: 100%;
+		min-height: 20px;
+	}
+
+	#home #content {
+		padding-right: 30px;
+	}
+
+	#about #content li {
+		margin: 0 20px; 
+	}
+
+	#about p, #about #content div, #contact p {
+		margin: 10px 20px 0;
+	}
+
+	#about #content #resume li {
+		margin-left: 20px;
+	}
+
+	#portfolio #content {
+		margin: -20px 0 20px 10px; 
+	}
+
+	#pages #content, #design #content {
+		margin: -20px 0 20px 10px;
+	}
+}
+
+
+
+
+
+
+
+
